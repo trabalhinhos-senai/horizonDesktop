@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+
 
 @Entity
 public class Produtos implements Serializable{
@@ -32,11 +32,11 @@ public class Produtos implements Serializable{
     @Column (name = "nome_produto")
     private int nomeProduto;
     @ManyToOne 
-    private int produtoIdUnidMedida;
+    private Produtos_Unid_Medida produtoIdUnidMedida;
     @ManyToOne
-    private int produtoIdCategoria;
+    private Produto_Categoria produtoIdCategoria;
     @ManyToOne 
-    private int IdFornecedor;
+    private Fornecedor IdFornecedor;
     @Column (name = "preco_custo_produto", columnDefinition="Decimal(10,2)")
     private double precoCustoProduto;
     @Column (name = "preco_venda_produto", columnDefinition="Decimal(10,2)")
@@ -128,13 +128,15 @@ public class Produtos implements Serializable{
         this.nomeProduto = nomeProduto;
     }
 
-    public int getProdutoIdUnidMedida() {
+    public Produtos_Unid_Medida getProdutoIdUnidMedida() {
         return produtoIdUnidMedida;
     }
 
-    public void setProdutoIdUnidMedida(int produtoIdUnidMedida) {
+    public void setProdutoIdUnidMedida(Produtos_Unid_Medida produtoIdUnidMedida) {
         this.produtoIdUnidMedida = produtoIdUnidMedida;
     }
+
+   
 
     public int getProdutoIdCategoria() {
         return produtoIdCategoria;
@@ -144,13 +146,15 @@ public class Produtos implements Serializable{
         this.produtoIdCategoria = produtoIdCategoria;
     }
 
-    public int getIdFornecedor() {
+    public Fornecedor getIdFornecedor() {
         return IdFornecedor;
     }
 
-    public void setIdFornecedor(int IdFornecedor) {
+    public void setIdFornecedor(Fornecedor IdFornecedor) {
         this.IdFornecedor = IdFornecedor;
     }
+
+   
 
     public double getPrecoCustoProduto() {
         return precoCustoProduto;

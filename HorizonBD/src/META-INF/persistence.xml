@@ -15,6 +15,9 @@
     <class>model.Fornecedor_Endereco</class>
     <class>model.Fornecedor_contato</class>
     <class>model.Orcamentos</class>
+    <class>model.Produto_Categoria</class>
+    <class>model.Produtos_Unid_Medida</class>
+    <class>model.Produtos</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/horizonbd?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
