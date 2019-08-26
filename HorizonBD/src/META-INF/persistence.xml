@@ -13,6 +13,8 @@
     <class>model.Cliente_Contato</class>
     <class>model.Fornecedor</class>
     <class>model.Fornecedor_Endereco</class>
+    <class>model.Fornecedor_contato</class>
+    <class>model.Orcamentos</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/horizonbd?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
