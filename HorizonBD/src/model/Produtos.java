@@ -136,15 +136,17 @@ public class Produtos implements Serializable{
         this.produtoIdUnidMedida = produtoIdUnidMedida;
     }
 
-   
-
-    public int getProdutoIdCategoria() {
+    public Produto_Categoria getProdutoIdCategoria() {
         return produtoIdCategoria;
     }
 
-    public void setProdutoIdCategoria(int produtoIdCategoria) {
+    public void setProdutoIdCategoria(Produto_Categoria produtoIdCategoria) {
         this.produtoIdCategoria = produtoIdCategoria;
     }
+
+   
+
+   
 
     public Fornecedor getIdFornecedor() {
         return IdFornecedor;
