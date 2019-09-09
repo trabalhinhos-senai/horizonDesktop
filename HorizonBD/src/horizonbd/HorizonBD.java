@@ -8,9 +8,11 @@ public class HorizonBD {
 
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("HorizonBDPU");
     static EntityManager em = emf.createEntityManager();
-    
-    public static void main(String[] args) {
-        
-    }
 
+    public static void main(String[] args) {
+        System.out.println("test");
+    }
+    public static EntityManager getEm() {
+        return em;
+    }   
 }
