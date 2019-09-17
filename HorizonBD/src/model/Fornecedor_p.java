@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Fornecedor implements Serializable{
+public class Fornecedor_p implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -63,7 +63,7 @@ public class Fornecedor implements Serializable{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Fornecedor other = (Fornecedor) obj;
+        final Fornecedor_p other = (Fornecedor_p) obj;
         if (!Objects.equals(this.ID, other.ID)) {
             return false;
         }

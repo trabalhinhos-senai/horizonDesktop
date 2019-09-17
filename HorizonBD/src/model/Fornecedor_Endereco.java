@@ -24,7 +24,7 @@ public class Fornecedor_Endereco implements Serializable{
     @Column
     private String cep_fornecedor;
     @OneToOne
-    private Fornecedor id_fornecedor;
+    private Fornecedor_p id_fornecedor;
     @OneToOne
     private Cidade id_cidade;
     @Column
@@ -89,11 +89,11 @@ public class Fornecedor_Endereco implements Serializable{
         this.cep_fornecedor = cep_fornecedor;
     }
 
-    public Fornecedor getId_fornecedor() {
+    public Fornecedor_p getId_fornecedor() {
         return id_fornecedor;
     }
 
-    public void setId_fornecedor(Fornecedor id_fornecedor) {
+    public void setId_fornecedor(Fornecedor_p id_fornecedor) {
         this.id_fornecedor = id_fornecedor;
     }
 

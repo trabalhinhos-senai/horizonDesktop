@@ -9,7 +9,7 @@ public class ConexaoBD {
     private static final String URL_MYSQL = "jdbc:mysql://localhost/sistema";
     private static final String DRIVER_CLASS = "com.mysql.jdbc.Driver";
     private static final String USER = "root";
-    private static final String PASS = "a1s2d3";
+    private static final String PASS = "";
 
     public static Connection conectarBanco() {
         System.out.println("iniciando conexão ...");

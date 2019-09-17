@@ -24,7 +24,7 @@ public class Fornecedor_contato implements Serializable {
     @Column
     private String whatsapp_fornecedor;
     @OneToOne
-    private Fornecedor id_fornecedor;
+    private Fornecedor_p id_fornecedor;
 
     public Integer getID() {
         return ID;
@@ -58,11 +58,11 @@ public class Fornecedor_contato implements Serializable {
         this.whatsapp_fornecedor = whatsapp_fornecedor;
     }
 
-    public Fornecedor getId_fornecedor() {
+    public Fornecedor_p getId_fornecedor() {
         return id_fornecedor;
     }
 
-    public void setId_fornecedor(Fornecedor id_fornecedor) {
+    public void setId_fornecedor(Fornecedor_p id_fornecedor) {
         this.id_fornecedor = id_fornecedor;
     }
 

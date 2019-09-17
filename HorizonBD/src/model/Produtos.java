@@ -36,7 +36,7 @@ public class Produtos implements Serializable{
     @ManyToOne
     private Produto_Categoria produtoIdCategoria;
     @ManyToOne 
-    private Fornecedor IdFornecedor;
+    private Fornecedor_p IdFornecedor;
     @Column (name = "preco_custo_produto", columnDefinition="Decimal(10,2)")
     private double precoCustoProduto;
     @Column (name = "preco_venda_produto", columnDefinition="Decimal(10,2)")
@@ -148,11 +148,11 @@ public class Produtos implements Serializable{
 
    
 
-    public Fornecedor getIdFornecedor() {
+    public Fornecedor_p getIdFornecedor() {
         return IdFornecedor;
     }
 
-    public void setIdFornecedor(Fornecedor IdFornecedor) {
+    public void setIdFornecedor(Fornecedor_p IdFornecedor) {
         this.IdFornecedor = IdFornecedor;
     }
 
